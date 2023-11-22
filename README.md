@@ -1,4 +1,6 @@
-# Integrantes
+# Trabalho de web proxy SI2
 
-Lucas Machado - 134539
-Lucas Leal - 135313
+**Integrantes:**
+
+- Lucas Machado - 134539
+- Lucas Leal - 135313
