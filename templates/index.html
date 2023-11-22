@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <title>Web proxy</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Olá, você esta logado ao proxy como {{username}} 😊</h1>
+      <p>Sua idade: {{user_age}}</p>
+      <form action="/proxy" method="POST">
+        <label for="url">Digite a url:</label>
+        <input type="text" name="url" id="url" placeholder="https://" />
+        <button type="submit">Entrar</button>
+      </form>
+      <h2>Palavras restritas:</h2>
+      <ul>
+        {% for word in restricted_words %}
+          <li>{{word}}</li>
+        {% endfor %}
+      </ul>
+      <form action="/logout" method="POST" id="logout">
+        <button>logout</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.app {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 300px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+button {
+  width: 80px;
+  margin: 0 auto;
+}
+
+#logout {
+  max-width: fit-content;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}

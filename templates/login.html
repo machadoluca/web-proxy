@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web proxy</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <div class="app">
+      <form action="/login" method="POST">
+        <label for="user-name">Nome</label>
+        <input type="text" name="username" id="user-name" />
+        <label for="user-age">Idade</label>
+        <input type="number" name="age" id="user-age" />
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </body>
+</html>
